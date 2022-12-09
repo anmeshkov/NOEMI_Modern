@@ -1,0 +1,269 @@
+/* desktop */
+/* screen width > 1200px */
+
+
+
+@media screen and (max-width: 1200px) {
+    /* tablet */
+    /* 641px < screen width < 1200px */
+    .container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .header-logo__img {
+        width: 158px;
+    }
+
+    .header {
+        padding-top: 43px;
+        padding-bottom: 110px;
+    }
+
+    .header-intro {
+        max-width: 640px;
+        margin-top: 85px;
+    }
+
+    .header-title {
+        font-size: 40px;
+        line-height: 1.4;
+    }
+
+    .trends {
+        padding-top: 48px;
+    }
+
+    .section__title {
+        font-size: 18px;
+        margin-bottom: 19px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .trends-cards__wrp {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .trends-card {
+        width: calc(50% - 1.5px);
+        min-height: 248px;
+        margin: 0 0 3px 3px;
+        height: 248px;
+    }
+
+    .trends-card:nth-child(1n+1) {
+        margin-left: 0;
+    }
+
+    .card__title {
+        font-size: 17px;
+    }
+
+    .card__content {
+        padding: 31px 30px;
+        left: 20px;
+        right: 20px;
+    }
+
+    /* .trends-card:nth-child(1n+3) {
+        margin-top: 5px;
+    } */
+
+    .main-content-wrp {
+        justify-content: center;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    .main-content {
+        flex: 0 1 395px;
+        margin-right: 30px;
+    }
+    
+    .time-and-author__wrp {
+        margin-bottom: 27px;
+    }
+
+    /* article */
+    .article {
+        flex-direction: column;
+        border-bottom: 3px solid #eee;
+    }
+
+    .article:nth-child(1n+2) {
+        margin: 44px 0 0 0;
+    }
+
+    .article-title {
+        font-size: 17px;
+        line-height: 1.3;
+        margin-top: 11px;
+    }
+
+    .article-image {
+        flex: 1 1 auto;
+        width: 100%;
+        margin-bottom: 11px;
+    }
+
+    .shop-cards-wrp {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media screen and (max-width: 640px) {
+    /* mobile */
+    /* screen width < 640px */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header {
+        padding-top: 225px;
+        padding-bottom: 210px;
+    }
+
+    .header-logo {
+        width: 268px;
+    }
+
+    .header-logo__img {
+        width: 268px;
+    }
+
+    .header-wrp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-intro {
+        margin-top: 29px;
+    }
+
+    .header-title {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    .trends {
+        padding-top: 42px;
+    }
+
+    .section__title {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .trends-cards__wrp {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .trends-card {
+        width: 100%;
+        min-height: 230px;
+        margin-bottom: 4px;
+        height: 230px;
+    }
+
+    .main-content-wrp {
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+
+    .shop-cards-wrp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-card:nth-child(1n+2) {
+        margin-left: 0;
+    }
+
+    .card__content {
+        padding: 25px 18px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .card__title {
+        font-size: 16px;
+    }
+
+    .main-content {
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+
+    .article-image {
+        margin-bottom: 13px;
+    }
+
+    .article-title {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-top: 11px;
+        margin-bottom: 17px;
+    }
+
+    .time-and-author__wrp {
+        margin-bottom: 0;
+    }
+
+    .article__text p {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 14px 0;
+    }
+
+    .article {
+        padding-bottom: 6px;
+    }
+
+    .article:nth-child(1n+2) {
+        margin: 35px 0 0 0;
+    }
+
+    .widget__title {
+        font-size: 16px;
+    }
+
+
+    .widget {
+        margin-bottom: 45px;
+    }
+
+    .widget:last-child {
+        margin-bottom: 0;
+    }
+
+    /* .widget-search {
+        margin-bottom: 45px;
+    }
+
+    .widget-tags {
+        margin-bottom: 45px;
+    } */
+
+    .tags-widget__list {
+        line-height: 40px;
+    }
+
+    .shop,
+    .footer {
+        padding-bottom: 45px;
+    }
+
+    .social {
+        margin-bottom: 45px;
+    }
+}
