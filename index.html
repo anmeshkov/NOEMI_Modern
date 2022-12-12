@@ -8,9 +8,14 @@
     <title>NOEMI Modern</title>
     <!-- style -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
+
+    <!--[if lt IE 9]>
+            <p>Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a> до последней версии .</p>
+    <![endif]-->
 
     <!-- header -->
     <header class="header">
@@ -43,13 +48,132 @@
                         </li>
                     </ul>
                 </nav>
+
+                <button class="mobile-nav-button" type="submit" title="Навигация">
+                    <span class="mobile-hamburger"></span>
+                </button>
+
+                <div class="mobile-nav-wrp">
+                    <div class="mobile-nav-logo">
+                        <a href="#" title="NOEMI Modern">
+                            <img class="mobile-nav__img" src="./images/noemi-logo.svg" alt="Логотип">
+                        </a>
+                    </div>
+                    <nav class="mobile-nav">
+                        <ul class="mobile-nav__list">
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="#" title="Главная">Главная</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="#" title="Посты">Посты</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="#" title="Статьи">Статьи</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="#" title="Теги">Теги</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="#" title="Темы">Темы</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="#" title="Контакты">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
+
+            <div class="header-mobile-logo">
+                <a href="#" title="NOEMI Modern">
+                    <img class="header-mobile-logo__img" src="./images/noemi-logo.svg" alt="Логотип">
+                </a>
+            </div>
+
             <div class="header-intro">
                 <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
             </div>
         </div>
     </header>
     <!-- /header -->
+
+    <!-- trends -->
+    <section class="trends">
+        <!-- title -->
+        <h2 class="section__title">Сейчас в тренде</h2>
+        <!-- /title -->
+        <!-- content -->
+        <div class="trends-cards__wrp">
+            <!-- trends-card -->
+            <div class="trends-card">
+                <a class="card__link" href="#" title="Сейчас в тренде: сад на подоконнике"></a>
+                <img class="card__img" src="./images/trend1.jpg" alt="Сейчас в тренде: сад на подоконнике">
+                <div class="card__content">
+                    <ul class="card-category">
+                        <li class="card-category__item"><a class="card-category__link" href="#">lifestyle</a></li>
+                        <li class="card-category__item"><a class="card-category__link" href="#">interior</a></li>
+                    </ul>
+                    <h3 class="card__title">
+                        <a class="card__title__link" href="#" title="Сейчас в тренде: сад на подоконнике">Сейчас в
+                            тренде: сад на подоконнике</a>
+                    </h3>
+                </div>
+            </div>
+            <!-- /trends-card -->
+            <!-- trends-card -->
+            <div class="trends-card">
+                <a class="card__link" href="#" title="Cыры на красивых картинках из интернета: какие они на вкус?"></a>
+                <img class="card__img" src="./images/trend2.jpg"
+                    alt="Cыры на красивых картинках из интернета: какие они на вкус?">
+                <div class="card__content">
+                    <ul class="card-category">
+                        <li class="card-category__item"><a class="card-category__link" href="#">Food</a></li>
+                    </ul>
+                    <h3 class="card__title">
+                        <a class="card__title__link" href="#"
+                            title="Cыры на красивых картинках из интернета: какие они на вкус?">Cыры на красивых
+                            картинках из интернета: какие они на вкус?</a>
+                    </h3>
+                </div>
+            </div>
+            <!-- /trends-card -->
+            <!-- trends-card -->
+            <div class="trends-card">
+                <a class="card__link" href="#" title="СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ"></a>
+                <img class="card__img" src="./images/trend3.jpg" alt="СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ">
+                <div class="card__content">
+                    <ul class="card-category">
+                        <li class="card-category__item"><a class="card-category__link" href="#">lifestyle</a></li>
+                        <li class="card-category__item"><a class="card-category__link" href="#">Travel</a></li>
+                    </ul>
+                    <h3 class="card__title">
+                        <a class="card__title__link" href="#" title="СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ">СОБИРАЕМСЯ В
+                            ПЕРВЫЙ ПОХОД В ГОРЫ</a>
+                    </h3>
+                </div>
+            </div>
+            <!-- /trends-card -->
+            <!-- trends-card -->
+            <div class="trends-card">
+                <a class="card__link" href="#" title="Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?"></a>
+                <img class="card__img" src="./images/trend4.jpg" alt="Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?">
+                <div class="card__content">
+                    <ul class="card-category">
+                        <li class="card-category__item"><a class="card-category__link" href="#">food</a></li>
+                        <li class="card-category__item"><a class="card-category__link" href="#">health</a></li>
+                    </ul>
+                    <h3 class="card__title">
+                        <a class="card__title__link" href="#"
+                            title="Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В
+                            ЛИМОНАХ?</a>
+                    </h3>
+                </div>
+            </div>
+            <!-- /trends-card -->
+        </div>
+        <!-- /content -->
+    </section>
+    <!-- /trends -->
 
     <!-- content -->
     <div class="container main-content-wrp">
@@ -289,96 +413,6 @@
             </article>
             <!-- /article -->
 
-            <!-- article -->
-            <article class="article">
-                <!-- image -->
-                <div class="article-image">
-                    <img class="article-image__img" src="./images/last-post6.jpg"
-                        alt="Как первый раз отправиться в горы?">
-                    <a class="article-image__link" href="#" title="Как первый раз отправиться в горы?">Как первый раз
-                        отправиться в горы?</a>
-                </div>
-                <!-- /image -->
-                <header class="article-header">
-                    <!-- tags -->
-                    <ul class="article-tags__list">
-                        <li class="article-tags__item">
-                            <a class="article-tags__link" href="#">Travel</a>
-                        </li>
-                        <li class="article-tags__item">
-                            <a class="article-tags__link" href="#">INTERIOR</a>
-                        </li>
-                    </ul>
-                    <!-- /tags -->
-                    <!-- title -->
-                    <h3 class="article-title">
-                        <a class="article-title__link" href="#">Как первый раз отправиться в горы?</a>
-                    </h3>
-                    <!-- /title -->
-                    <div class="time-and-author__wrp">
-                        <!-- time -->
-                        <span class="article-time">10 июня 2019</span>
-                        <!-- /time -->
-                        <!-- author -->
-                        <div class="article-author">Неизвестный автор</div>
-                        <!-- /author -->
-                    </div>
-                    <!-- text -->
-                    <div class="article__text">
-                        <p>
-                            Для начала нужно определиться, в каком формате пройдёт ваше путешествие. Это зависит от
-                            многих факторов, не только от ваших желаний и интересов.
-                        </p>
-                    </div>
-                    <!-- /text -->
-                </header>
-            </article>
-            <!-- /article -->
-
-            <!-- article -->
-            <article class="article">
-                <!-- image -->
-                <div class="article-image">
-                    <img class="article-image__img" src="./images/last-post4.jpg" alt="Наукоёмкий подход к кулинарии">
-                    <a class="article-image__link" href="#" title="Наукоёмкий подход к кулинарии">Наукоёмкий подход к
-                        кулинарии</a>
-                </div>
-                <!-- /image -->
-                <header class="article-header">
-                    <!-- tags -->
-                    <ul class="article-tags__list">
-                        <li class="article-tags__item">
-                            <a class="article-tags__link" href="#">lifestyle</a>
-                        </li>
-                        <li class="article-tags__item">
-                            <a class="article-tags__link" href="#">food</a>
-                        </li>
-                    </ul>
-                    <!-- /tags -->
-                    <!-- title -->
-                    <h3 class="article-title">
-                        <a class="article-title__link" href="#">Наукоёмкий подход к кулинарии</a>
-                    </h3>
-                    <!-- /title -->
-                    <div class="time-and-author__wrp">
-                        <!-- time -->
-                        <span class="article-time">10 июня 2019</span>
-                        <!-- /time -->
-                        <!-- author -->
-                        <div class="article-author">Неизвестный автор</div>
-                        <!-- /author -->
-                    </div>
-                    <!-- text -->
-                    <div class="article__text">
-                        <p>
-                            Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и
-                            микробиологию еды.
-                        </p>
-                    </div>
-                    <!-- /text -->
-                </header>
-            </article>
-            <!-- /article -->
         </main>
         <!-- /main -->
 
@@ -472,7 +506,7 @@
             <!-- /latest-posts -->
 
             <!-- search-form -->
-            <div class="widget">
+            <div class="widget widget-form">
                 <form class="search-form" action="#" method="post">
                     <label class="search-form__label">
                         <input class="search-form__input widget-input" type="text" placeholder="Найти..." required>
@@ -484,7 +518,7 @@
             <!-- /search-form -->
 
             <!-- search-form -->
-            <div class="widget">
+            <div class="widget widget-search">
                 <span class="widget__title">Рассылка</span>
 
                 <form class="subscribe-form" action="#" method="post">
@@ -497,7 +531,7 @@
             <!-- /search-form -->
 
             <!-- tags -->
-            <div class="widget">
+            <div class="widget widget-tags">
                 <span class="widget__title">Теги</span>
 
                 <ul class="tags-widget__list">
@@ -532,7 +566,7 @@
             <!-- categories -->
             <div class="widget">
                 <span class="widget__title">Темы</span>
-                
+
                 <ul class="categories-widget__list">
                     <li class="categories-widget__item">
                         <a class="categories-widget__link" href="#">Красота</a>
@@ -559,13 +593,147 @@
                         <span class="categories-widget__counter">8</span>
                     </li>
                 </ul>
-            </div>            
+            </div>
             <!-- /categories -->
 
         </aside>
         <!-- /sidebar -->
     </div>
     <!-- /content -->
+
+    <!-- shop -->
+    <section class="shop">
+        <div class="container">
+            <!-- title -->
+            <h2 class="section__title">Наши изделия</h2>
+            <!-- /title -->
+
+            <!-- content -->
+            <div class="shop-cards-wrp">
+
+                <!-- shop-card -->
+                <div class="shop-card">
+                    <div class="shop-card__picture">
+                        <a class="shop-card__link" href="#" title="Подушки на диван"></a>
+                        <img class="shop-card__img" src="./images/shop-item-desk1.jpg" alt="Подушки на диван">
+                    </div>
+                    <div class="shop-card__main">
+                        <h3 class="shop-card__title">Подушки на диван</h3>
+                        <p>Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь</a>.</p>
+                        <div class="shop-card__footer">
+                            <div class="shop-card__price">
+                                <span class="price-sale">1000 ₽</span>
+                                <span>800 ₽</span>
+                            </div>
+                            <button class="shop-card__button" title="В магазин">В магазин</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /shop-card -->
+                <!-- shop-card -->
+                <div class="shop-card">
+                    <div class="shop-card__picture">
+                        <a class="shop-card__link" href="#" title="Кукла «Зайчик»"></a>
+                        <img class="shop-card__img" src="./images/shop-item-desk2.jpg" alt="Кукла «Зайчик»">
+                    </div>
+                    <div class="shop-card__main">
+                        <h3 class="shop-card__title">Кукла «Зайчик»</h3>
+                        <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#">весенняя серия
+                                постов</a> в блоге и несколько подкастов.</p>
+                        <div class="shop-card__footer">
+                            <div class="shop-card__price">
+                                <span>3500 ₽</span>
+                            </div>
+                            <button class="shop-card__button" title="В магазин">В магазин</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /shop-card -->
+                <!-- shop-card -->
+                <div class="shop-card">
+                    <div class="shop-card__picture">
+                        <a class="shop-card__link" href="#" title="Шестиугольная рамка"></a>
+                        <img class="shop-card__img" src="./images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+                        <!-- <img class="shop-card__img" src="https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg?w=2000" alt="Шестиугольная рамка"> -->
+                    </div>
+                    <div class="shop-card__main">
+                        <h3 class="shop-card__title">Шестиугольная рамка</h3>
+                        <p>Необычная рамка для украшения дома из видео <a href="#">«Как сделать рамку из подручных
+                                средств за 30 минут»</a> </p>
+                        <div class="shop-card__footer">
+                            <div class="shop-card__price">
+                                <span class="price-sale">500 ₽</span>
+                                <span>400 ₽</span>
+                            </div>
+                            <button class="shop-card__button" title="В магазин">В магазин</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /shop-card -->
+
+            </div>
+            <!-- /content -->
+        </div>
+    </section>
+    <!-- /shop -->
+
+    <!-- popup-window -->
+    <div class="popup-background">
+        <div class="popup-window">
+            <h3 class="popup__title">Ваш фидбек</h3>
+            <form class="popup__form" action="#" method="post">
+
+                <!-- select -->
+                <div class="form-group">
+                    <label class="popup__form-label">
+                        <span class="group__title">Как часто вы заходите на сайт?</span>
+                        <select class="popup__form-select popup__form-input" required>
+                            <option value="" selected disabled>Ответьте на вопрос:</option>
+                            <option value="Почти каждый день">Почти каждый день</option>
+                            <option value="Раз в несколько дней">Раз в несколько дней</option>
+                            <option value="Раз в несколько недель">Раз в несколько недель</option>
+                            <option value="Несколько раз в год">Несколько раз в год</option>
+                        </select>
+                    </label>
+                </div>
+                <!-- /select -->
+
+                <!-- radio -->
+                <div class="form-group">
+                    <span class="group__title">Вы подписаны на e-mail рассылку?</span>
+                    <div class="radio-group">
+                        <label class="popup__radio-label-wrp">
+                            <input class="popup__radio-btn" type="radio" name="e-mail" required>
+                            <span class="popup__radio-label">Да</span>
+                        </label>
+                        <label class="popup__radio-label-wrp">
+                            <input class="popup__radio-btn" type="radio" name="e-mail" required>
+                            <span class="popup__radio-label">Нет</span>
+                        </label>
+                    </div>
+                </div>
+                <!-- /radio -->
+
+                <!-- textarea -->
+                <div class="form-group  form-group-textarea">
+                    <label class="popup__form-label">
+                        <span class="group__title">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                        <textarea class="form-textarea popup__form-input"
+                            placeholder="Может, больше рецептов?" required></textarea>
+                    </label>
+                </div>
+                <!-- /textarea -->
+
+                <div class="form-group">
+                    <button class="form-button" type="submit">Отправить</button>
+                </div>
+
+            </form>
+
+            <button class="popup-close"></button>
+        </div>
+    </div>
+    <!-- /popup-window -->
 
     <!-- footer -->
     <footer class="footer">
@@ -628,7 +796,10 @@
         </div>
     </footer>
     <!-- /footer -->
-
+    
+    <!-- script -->
+    <script src="./js/main.js"></script>
+    <!-- /script -->
 </body>
 
 </html>
