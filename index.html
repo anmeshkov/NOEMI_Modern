@@ -13,6 +13,10 @@
 
 <body>
 
+    <!--[if lt IE 9]>
+            <p>Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a> до последней версии .</p>
+    <![endif]-->
+
     <!-- header -->
     <header class="header">
         <div class="container header-wrp">
@@ -44,7 +48,48 @@
                         </li>
                     </ul>
                 </nav>
+
+                <button class="mobile-nav-button" type="submit" title="Навигация">
+                    <span class="mobile-hamburger"></span>
+                </button>
+
+                <div class="mobile-nav-wrp">
+                    <div class="mobile-nav-logo">
+                        <a href="#" title="NOEMI Modern">
+                            <img class="mobile-nav__img" src="./images/noemi-logo.svg" alt="Логотип">
+                        </a>
+                    </div>
+                    <nav class="mobile-nav">
+                        <ul class="mobile-nav__list">
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="#" title="Главная">Главная</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="#" title="Посты">Посты</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="#" title="Статьи">Статьи</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="#" title="Теги">Теги</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="#" title="Темы">Темы</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="#" title="Контакты">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
+
+            <div class="header-mobile-logo">
+                <a href="#" title="NOEMI Modern">
+                    <img class="header-mobile-logo__img" src="./images/noemi-logo.svg" alt="Логотип">
+                </a>
+            </div>
+
             <div class="header-intro">
                 <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
             </div>
@@ -580,7 +625,7 @@
                                 <span class="price-sale">1000 ₽</span>
                                 <span>800 ₽</span>
                             </div>
-                            <a class="shop-card__button" href="#" title="В магазин">В магазин</a>
+                            <button class="shop-card__button" title="В магазин">В магазин</button>
                         </div>
                     </div>
                 </div>
@@ -599,7 +644,7 @@
                             <div class="shop-card__price">
                                 <span>3500 ₽</span>
                             </div>
-                            <a class="shop-card__button" href="#" title="В магазин">В магазин</a>
+                            <button class="shop-card__button" title="В магазин">В магазин</button>
                         </div>
                     </div>
                 </div>
@@ -620,7 +665,7 @@
                                 <span class="price-sale">500 ₽</span>
                                 <span>400 ₽</span>
                             </div>
-                            <a class="shop-card__button" href="#" title="В магазин">В магазин</a>
+                            <button class="shop-card__button" title="В магазин">В магазин</button>
                         </div>
                     </div>
                 </div>
@@ -632,6 +677,7 @@
     </section>
     <!-- /shop -->
 
+    <!-- popup-window -->
     <div class="popup-background">
         <div class="popup-window">
             <h3 class="popup__title">Ваш фидбек</h3>
@@ -641,7 +687,8 @@
                 <div class="form-group">
                     <label class="popup__form-label">
                         <span class="group__title">Как часто вы заходите на сайт?</span>
-                        <select class="popup__form-select">
+                        <select class="popup__form-select popup__form-input" required>
+                            <option value="" selected disabled>Ответьте на вопрос:</option>
                             <option value="Почти каждый день">Почти каждый день</option>
                             <option value="Раз в несколько дней">Раз в несколько дней</option>
                             <option value="Раз в несколько недель">Раз в несколько недель</option>
@@ -654,22 +701,25 @@
                 <!-- radio -->
                 <div class="form-group">
                     <span class="group__title">Вы подписаны на e-mail рассылку?</span>
-                    <label class="popup__radio-label">
-                        <input class="popup__radio-btn" type="radio" name="e-mail">
-                        <span>Да</span>
-                    </label>
-                    <label class="popup__radio-label">
-                        <input class="popup__radio-btn" type="radio" name="e-mail">
-                        <span>Нет</span>
-                    </label>
+                    <div class="radio-group">
+                        <label class="popup__radio-label-wrp">
+                            <input class="popup__radio-btn" type="radio" name="e-mail" required>
+                            <span class="popup__radio-label">Да</span>
+                        </label>
+                        <label class="popup__radio-label-wrp">
+                            <input class="popup__radio-btn" type="radio" name="e-mail" required>
+                            <span class="popup__radio-label">Нет</span>
+                        </label>
+                    </div>
                 </div>
                 <!-- /radio -->
 
                 <!-- textarea -->
-                <div class="form-group">
+                <div class="form-group  form-group-textarea">
                     <label class="popup__form-label">
                         <span class="group__title">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-                        <textarea class="form-textarea"></textarea>
+                        <textarea class="form-textarea popup__form-input"
+                            placeholder="Может, больше рецептов?" required></textarea>
                     </label>
                 </div>
                 <!-- /textarea -->
@@ -683,6 +733,7 @@
             <button class="popup-close"></button>
         </div>
     </div>
+    <!-- /popup-window -->
 
     <!-- footer -->
     <footer class="footer">
@@ -745,7 +796,10 @@
         </div>
     </footer>
     <!-- /footer -->
-
+    
+    <!-- script -->
+    <script src="./js/main.js"></script>
+    <!-- /script -->
 </body>
 
 </html>

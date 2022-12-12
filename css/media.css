@@ -20,6 +20,10 @@
         padding-bottom: 110px;
     }
 
+    .mobile-nav-button {
+        display: block;
+    }
+
     .header-intro {
         max-width: 640px;
         margin-top: 85px;
@@ -126,23 +130,36 @@
     }
 
     .header {
-        padding-top: 225px;
+        padding-top: 32px;
         padding-bottom: 210px;
     }
 
     .header-logo {
-        width: 268px;
+        display: none;
+    }
+
+    .header-mobile-logo {
+        display: block;
+    }
+
+    .header-mobile-logo__img {
+        width: 100%;
+    }
+
+    .header-line {
+        justify-content: end;
+        margin-bottom: 173px;
     }
 
     .header-logo__img {
         width: 268px;
     }
 
-    .header-wrp {
+    /* .header-wrp {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
     .header-intro {
         margin-top: 29px;
