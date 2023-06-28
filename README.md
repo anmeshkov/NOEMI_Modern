@@ -1,7 +1,7 @@
 # NOEMI_Modern Theme
-[Demo](url)
+[Demo](https://anmeshkov.github.io/NOEMI_Modern/)
 ___
-[img]
+![image](https://github.com/anmeshkov/NOEMI_Modern/assets/97451331/0e21bc95-2131-47aa-98f0-ece0837f93b5)
 ___
 
 ## Общие технические требования
